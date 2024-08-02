@@ -1,5 +1,1 @@
-# ZoomAPI
-# StemKasaZoomAPI
-# zoomAPI
-# zoomAPI
-# StemkasaZoom
+Local test for Zoom Api integration
