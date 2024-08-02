@@ -1,0 +1,41 @@
+<!-- provides UI for creating zoom meeting  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Zoom meeting</title>        
+    <link rel="Stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Create a Zoom Meeting</h1>
+    <form id="createMeetingForm">
+        <label for ='email'>Your email: </label>
+        <input type="email" id="email" name="email" required>
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" required>
+        
+        <label for="start_time">Start Time:</label>
+        <input type="datetime-local" id="start_time" name="start_time" required>
+        
+        <label for="type">Type:</label>
+        <input type="number" id="type" name="type" value="2" required>
+        
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" required>
+        
+        <label for="timezone">Timezone:</label>
+        <input type="text" id="timezone" name="timezone" value="UTC" required>
+        
+        <label for="agenda">Agenda:</label>
+        <textarea id="agenda" name="agenda"></textarea>
+        
+        <button type="submit">Create Meeting</button>
+    </form>
+    
+    <button id="back">Back</button>
+
+    <script src="create.js"></script>
+
+</body>
+</html>
